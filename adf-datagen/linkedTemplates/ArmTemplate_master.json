@@ -19,9 +19,17 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'Ls_AzureSqlDatabase'"
 		},
+		"LS_AzureBlobStorage_Keyvault_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "adlsstorageaccountkey"
+		},
 		"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://blobdatgen.dfs.core.windows.net/"
+		},
+		"LS_AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://datgenkeyvault.vault.azure.net/"
 		},
 		"LS_RESTAPI_properties_typeProperties_url": {
 			"type": "string",
@@ -74,6 +82,12 @@
 					},
 					"Ls_AzureSqlDatabase_password": {
 						"value": "[parameters('Ls_AzureSqlDatabase_password')]"
+					},
+					"LS_AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('LS_AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
+					"LS_AzureBlobStorage_Keyvault_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('LS_AzureBlobStorage_Keyvault_properties_typeProperties_connectionString_secretName')]"
 					},
 					"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('LS_AzureDataLakeStorage1_properties_typeProperties_url')]"

@@ -14,8 +14,14 @@
 		"Ls_AzureSqlDatabase_password": {
 			"value": ""
 		},
+		"LS_AzureBlobStorage_Keyvault_properties_typeProperties_connectionString_secretName": {
+			"value": "adlsstorageaccountkey"
+		},
 		"LS_AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://blobdatgen.dfs.core.windows.net/"
+		},
+		"LS_AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://datgenkeyvault.vault.azure.net/"
 		},
 		"LS_RESTAPI_properties_typeProperties_url": {
 			"value": "https://jsonplaceholder.typicode.com/"
